@@ -54,3 +54,20 @@ The current canonicals, JSON-LD, sitemap, `robots.txt` and social URLs use the G
 - Shared mobile carousel controls are in `assets/js/carousels.js` and `assets/css/carousels.css`. They progressively enhance card grids and course/exam directories at widths below 768px. Desktop remains a grid.
 - About page uses two distinct, previously unused photos from the provided North Wales Tutoring source archive.
 - Before relying on safeguarding email delivery, send a non-sensitive test form submission and confirm delivery to the designated safeguarding mailbox. Never use a real child safeguarding concern as a test payload.
+
+## Search metadata, answer-engine context and service-area structured data
+
+Every HTML page has its own manually authored search title, meta description, canonical URL, Open Graph/Twitter preview tags and JSON-LD. The `data/seo-pages.json` catalogue records page-specific search intent and service type; `tools/enhance_seo.py` rebuilds the static heads while preserving page content.
+
+Service-area markup uses `EducationalOrganization` (with South Wales `areaServed`) plus a linked `Service`, `WebPage`, appropriate local `spatialCoverage`, breadcrumbs, and existing visible FAQs. It intentionally **does not** assert physical `LocalBusiness` addresses or invented map coordinates for the online-only operation. Google LocalBusiness rich-result eligibility requires a genuine address.
+
+To update metadata after changing URLs, prices or page coverage:
+
+```bash
+python -m pip install -r tools/seo-requirements.txt
+# Edit the page-specific settings in tools/enhance_seo.py, then:
+python tools/enhance_seo.py
+python tools/validate_site.py
+```
+
+The site remains static and deploys without Python package installation. Metadata and structured data can help machine understanding but do not guarantee rankings, rich results, AI citations or map-pack listings. The `llms.txt` page is informational, not a ranking signal. Recheck metadata after connecting a custom domain.

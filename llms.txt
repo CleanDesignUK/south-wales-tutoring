@@ -1,26 +1,40 @@
 # South Wales Tutoring
 
-> Online one-to-one tutoring across South Wales, part of North Wales Tutoring Group. Motto: Delivering a better future.
+> Delivering a better future through personalised online tutoring across South Wales.
 
-Website: https://cleandesignuk.github.io/south-wales-tutoring/
-Parent group: https://nwttutoring.com/
-Contact: southwales@nwttutoring.com | +44 7480 231362
-Social: https://www.facebook.com/southwalestutoring/ | https://www.instagram.com/southwalestutoring/
+Official website: https://cleandesignuk.github.io/south-wales-tutoring/
+Enquiries: southwales@nwttutoring.com
+WhatsApp messages: https://wa.me/447480231362
+Facebook: https://www.facebook.com/southwalestutoring/
+Instagram: https://www.instagram.com/southwalestutoring/
+Associated group: https://nwttutoring.com/
 
-South Wales Tutoring provides online Primary, KS3, GCSE, GCSE resit, AS and A-Level subject support. Core subjects include Maths, Physics, Chemistry, Biology, Combined Science and English. Exam boards supported through the tutor network include WJEC, Eduqas, AQA, Edexcel, OCR and CAIE, subject to qualification and tutor availability.
+South Wales Tutoring arranges live, one-to-one online tutoring with UK tutors. Tuition is offered to families in Cardiff, Swansea, Newport, Bridgend, the South Wales Valleys, Rhondda Cynon Taf, Caerphilly, Merthyr Tydfil, Vale of Glamorgan, Neath Port Talbot, Carmarthenshire, and surrounding communities. These are ONLINE service areas, not physical tutoring centres.
 
-Service areas (online, not walk-in centres): Cardiff, Swansea, Newport, Bridgend, Vale of Glamorgan, Rhondda Cynon Taf, Caerphilly, Merthyr Tydfil, Neath Port Talbot, Torfaen, Blaenau Gwent, Monmouthshire, Carmarthenshire and nearby towns.
+Subjects: Maths, Further Maths, Physics, Chemistry, Biology, Combined Science, English, languages and additional subjects, subject to tutor availability.
 
-Starting hourly rates: KS3/GCSE £20; AS/A-Level £25. Individual tutors may have different rates. Lessons are arranged after an enquiry; no availability or results are guaranteed.
+Levels and examinations: Primary, KS3, SATs, 11+, 13+, GCSE, AS-Level, A-Level, TMUA and UCAT. The tutor network supports WJEC, Eduqas, AQA, Edexcel, OCR and CAIE where applicable. Welsh-medium teaching is subject to tutor matching.
 
-Key guides:
+Published general starting rates: GCSE from £23 per hour and A-Level from £28 per hour. Individual tutors can charge different rates; exact price and availability must be confirmed before booking. No guaranteed outcomes are claimed.
+
+## Tutoring and location pages
+- https://cleandesignuk.github.io/south-wales-tutoring/subjects.html
 - https://cleandesignuk.github.io/south-wales-tutoring/maths-tutoring-south-wales.html
 - https://cleandesignuk.github.io/south-wales-tutoring/physics-tutoring-south-wales.html
-- https://cleandesignuk.github.io/south-wales-tutoring/wjec-tutoring-south-wales.html
+- https://cleandesignuk.github.io/south-wales-tutoring/science-tutoring-south-wales.html
 - https://cleandesignuk.github.io/south-wales-tutoring/gcse-tutoring-south-wales.html
 - https://cleandesignuk.github.io/south-wales-tutoring/a-level-tutoring-south-wales.html
+- https://cleandesignuk.github.io/south-wales-tutoring/wjec-tutoring-south-wales.html
+- https://cleandesignuk.github.io/south-wales-tutoring/exam-preparation.html
 - https://cleandesignuk.github.io/south-wales-tutoring/locations.html
-- https://cleandesignuk.github.io/south-wales-tutoring/blog.html
-- https://cleandesignuk.github.io/south-wales-tutoring/contact.html
+- https://cleandesignuk.github.io/south-wales-tutoring/areas/cardiff.html
+- https://cleandesignuk.github.io/south-wales-tutoring/areas/swansea.html
+- https://cleandesignuk.github.io/south-wales-tutoring/areas/newport.html
+- https://cleandesignuk.github.io/south-wales-tutoring/our-tutors.html
 
-This optional llms.txt is provided as plain-text context only. It is not a search-ranking or AI-citation guarantee.
+## Enquiries, safeguarding and study resources
+- https://cleandesignuk.github.io/south-wales-tutoring/contact.html
+- https://cleandesignuk.github.io/south-wales-tutoring/safeguarding.html
+- https://cleandesignuk.github.io/south-wales-tutoring/blog.html
+
+The pages are the source of truth for current prices, tutor availability, safeguarding, and service coverage. This optional context file is not a Google ranking or AI citation mechanism.

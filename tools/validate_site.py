@@ -30,8 +30,7 @@ for file in pages:
         try:json.loads(item)
         except Exception as e:ERRORS.append(f'{file.relative_to(ROOT)} invalid JSON-LD: {e}')
     if 'Robert' in text or 'Ashley' in text:ERRORS.append(f'{file.relative_to(ROOT)} contains obsolete tutor')
-    # Distinguish obsolete advertised starting prices from individual tutor prices.
-    # For example, Muskan's independently published rate of £25/hr is valid.
+    # Only general advertised prices are checked here, not individual tutors' rates.
     marketing_text=re.sub(r'<article\b[^>]*class="[^"]*\btutor-card-new\b[^"]*"[^>]*>[\s\S]*?</article>', '', text)
     if file.name != 'our-tutors.html' and ('£20/hr' in marketing_text or '£25/hr' in marketing_text):
         ERRORS.append(f'{file.relative_to(ROOT)} contains obsolete general starting rate')
@@ -76,6 +75,76 @@ for file in pages:
         ERRORS.append('Deprecated tutor cards still present')
 if not (ROOT/'assets/brand/nwt-shield.png').exists():ERRORS.append('Missing NWT crest')
 if not (ROOT/'assets/brand/nwt-shield-favicon.jpg').exists():ERRORS.append('Missing JPG favicon')
+# SEO and service-area schema checks on all HTML pages.
+from html import unescape
+try:
+    seo_pages = json.loads((ROOT/'data/seo-pages.json').read_text())
+    site_url = json.loads((ROOT/'site-config.json').read_text())['siteUrl'].rstrip('/') + '/'
+    expected_pages = {str(p.relative_to(ROOT)) for p in pages}
+    if set(seo_pages) != expected_pages:
+        ERRORS.append(f'SEO metadata catalogue mismatch: {sorted(set(seo_pages)^expected_pages)}')
+    titles=set(); descriptions=set()
+    for page in pages:
+        path=str(page.relative_to(ROOT))
+        markup=page.read_text(encoding='utf-8')
+        scanner=LinkScanner();scanner.feed(markup)
+        data=json.loads(scanner.scripts[0]) if scanner.scripts else {}
+        graph=data.get('@graph',[])
+        items={v.get('@type'):v for v in graph if isinstance(v.get('@type'),str)}
+        org=items.get('EducationalOrganization',{})
+        service=items.get('Service',{})
+        web=items.get('WebPage') or items.get('AboutPage') or items.get('CollectionPage') or items.get('ContactPage') or items.get('Blog') or {}
+        expected_url=site_url if path=='index.html' else site_url+path
+        def metas(attr,value):
+            return re.findall(r'<meta\s+[^>]*'+attr+r'=["\']'+re.escape(value)+r'["\'][^>]*>',markup,flags=re.I)
+        canonical=re.findall(r'<link[^>]*rel=["\']canonical["\'][^>]*>',markup,flags=re.I)
+        if len(canonical)!=1 or f'href="{expected_url}"' not in canonical[0]:
+            ERRORS.append(f'{path}: missing or wrong canonical link')
+        match=re.search(r'<title>(.*?)</title>',markup,re.I|re.S)
+        title=unescape(match.group(1).strip()) if match else ''
+        if not title or title in titles:ERRORS.append(f'{path}: blank or duplicated page title')
+        titles.add(title)
+        if title != seo_pages[path]['title']:ERRORS.append(f'{path}: title not aligned to SEO catalog')
+        desc_meta=metas('name','description')
+        if len(desc_meta)!=1:ERRORS.append(f'{path}: expected one description meta')
+        desc=unescape(re.search(r'content="([^"]*)"',desc_meta[0]).group(1)) if len(desc_meta)==1 else ''
+        if not desc or desc in descriptions:ERRORS.append(f'{path}: blank or duplicated description')
+        descriptions.add(desc)
+        if desc != seo_pages[path]['description']:ERRORS.append(f'{path}: description not aligned to SEO catalog')
+        for key in ('og:title','og:description','og:image','og:url','og:site_name'):
+            if len(metas('property',key)) != 1:ERRORS.append(f'{path}: expected exactly one {key}')
+        for key in ('twitter:card','twitter:title','twitter:description','twitter:image'):
+            if len(metas('name',key)) != 1:ERRORS.append(f'{path}: expected exactly one {key}')
+        if len(metas('name','robots'))!=1:ERRORS.append(f'{path}: missing robots meta')
+        if web.get('url') != expected_url or web.get('name')!=title:
+            ERRORS.append(f'{path}: WebPage structured data does not match page title or canonical URL')
+        if org.get('@id') != site_url+'#organization':ERRORS.append(f'{path}: inconsistent organisation schema ID')
+        if not org.get('areaServed') or not service.get('areaServed'):
+            ERRORS.append(f'{path}: missing local service coverage markup')
+        if service.get('provider',{}).get('@id') != org.get('@id'):
+            ERRORS.append(f'{path}: service provider is not connected to organisation')
+        if service.get('availableChannel',{}).get('serviceUrl') != site_url+'contact.html':
+            ERRORS.append(f'{path}: no valid online contact channel in service schema')
+        if any('LocalBusiness' in str(v.get('@type','')) for v in graph):
+            ERRORS.append(f'{path}: do not imply a physical LocalBusiness location')
+        if 'ZC247571' in markup:ERRORS.append(f'{path}: old ICO registration claim')
+        if path in ('404.html','thank-you.html'):
+            if 'noindex' not in markup:ERRORS.append(f'{path}: utility page should remain noindex')
+        else:
+            if 'noindex' in markup:ERRORS.append(f'{path}: indexable page is marked noindex')
+        if path.startswith('areas/'):
+            target={'cardiff':'Cardiff','swansea':'Swansea','newport':'Newport','bridgend':'Bridgend','valleys':'Rhondda Cynon Taf'}[page.stem]
+            if not any(target in v.get('name','') for v in service['areaServed']):
+                ERRORS.append(f'{path}: location-specific service area missing {target}')
+    # Sitemap URLs must match the real canonical, indexable set.
+    root=ET.parse(ROOT/'sitemap.xml').getroot()
+    sitemap_urls={v.text for v in root.iter() if v.tag.endswith('loc')}
+    expected_sitemap={site_url if path=='index.html' else site_url+path for path in seo_pages if path not in ('404.html','thank-you.html')}
+    if sitemap_urls!=expected_sitemap:
+        ERRORS.append('Sitemap differs from the list of indexable canonical URLs')
+except Exception as error:
+    ERRORS.append(f'SEO schema validation failed: {error}')
+
 print(f'Validated {len(pages)} HTML pages and {len(list(ROOT.rglob("*.json")))} JSON files.')
 for e in ERRORS:print('ERROR:',e)
 sys.exit(bool(ERRORS))
