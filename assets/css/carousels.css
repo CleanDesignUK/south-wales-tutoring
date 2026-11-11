@@ -1,0 +1,43 @@
+/* Shared, accessible mobile-only horizontal card navigation. Desktop remains Bootstrap grid. */
+.mobile-swipe-shell {min-width:0;width:100%}
+.mobile-swipe-viewport {display:contents}
+.mobile-swipe-actions {display:none}
+@media (max-width:767.98px) {
+  .mobile-swipe-shell {position:relative;width:100%;max-width:100%;margin-top:.5rem}
+  .mobile-swipe-viewport {display:block;width:100%;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:2px;scrollbar-width:none;-ms-overflow-style:none;overscroll-behavior-inline:contain;outline-offset:3px}
+  .mobile-swipe-viewport::-webkit-scrollbar {display:none}
+  .mobile-swipe-track {display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;gap:0!important;align-items:stretch!important;margin:0!important;padding:0 1px 8px!important;width:100%!important}
+  .mobile-swipe-track > * {flex:0 0 calc(100% - 20px)!important;max-width:calc(100% - 20px)!important;width:calc(100% - 20px)!important;margin:0!important;padding:0 10px 0 0!important;scroll-snap-align:start;scroll-snap-stop:always;min-width:0}
+  .mobile-swipe-track > [hidden] {display:none!important}
+  .mobile-swipe-track > * > .feature-card,
+  .mobile-swipe-track > * > .review-card,
+  .mobile-swipe-track > * > .subject-card,
+  .mobile-swipe-track > * > .location-card,
+  .mobile-swipe-track > * > .pricing-card,
+  .mobile-swipe-track > * > .blog-card,
+  .mobile-swipe-track > * > .step-card,
+  .mobile-swipe-track > * > .tutor-card-new {height:100%}
+  .mobile-swipe-actions {display:flex;align-items:center;justify-content:flex-end;gap:10px;min-height:44px;margin-top:8px}
+  .mobile-swipe-count {font-family:Manrope,sans-serif;font-size:.79rem;font-weight:800;letter-spacing:.02em;color:var(--navy,#070769);margin-right:auto}
+  .mobile-swipe-control {display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid #d8d3e9;border-radius:50%;background:#fff;color:var(--navy,#070769);font-size:20px;box-shadow:0 4px 16px rgba(7,7,105,.07);transition:background .2s,border-color .2s,transform .2s}
+  .mobile-swipe-control:not(:disabled):hover {background:#ffe8f7;border-color:#fd46c1;transform:translateY(-1px)}
+  .mobile-swipe-control:disabled {opacity:.33;cursor:not-allowed;box-shadow:none}
+  .mobile-swipe-control:focus-visible,.mobile-swipe-viewport:focus-visible {outline:3px solid #fd46c1;outline-offset:3px}
+  .mobile-swipe-actions .mobile-swipe-hint {font-size:.72rem;color:#64647b;margin-right:auto}
+}
+@media (prefers-reduced-motion:reduce) {
+  .mobile-swipe-viewport {scroll-behavior:auto!important}
+  .mobile-swipe-control {transition:none}
+}
+/* Give Bootstrap rows breathing room at the tablet breakpoint. */
+@media(min-width:768px) and (max-width:991.98px) {
+  .container{padding-left:28px;padding-right:28px}
+}
+
+@media (max-width:767.98px) {
+  .mobile-swipe-track.course-directory {grid-template-columns:unset!important}
+  .mobile-swipe-track.course-directory > .course-directory-card {padding:22px!important;margin-right:10px!important;flex:0 0 calc(100% - 20px)!important;max-width:calc(100% - 20px)!important;width:calc(100% - 20px)!important;height:auto;min-height:170px}
+  .mobile-swipe-track.course-directory > .course-directory-card p{flex:1}
+}
+.mobile-swipe-actions[hidden]{display:none!important}
+@media(min-width:768px) and (max-width:1249.98px){.container{padding-left:28px;padding-right:28px}}

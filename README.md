@@ -45,3 +45,13 @@ This site is maintained as **static HTML**. There is **no required build step**.
 ## Custom domain
 
 The current canonicals, JSON-LD, sitemap, `robots.txt` and social URLs use the GitHub Pages preview URL. When the custom domain becomes active, change them consistently, configure the Pages CNAME and test HTTPS. Do not add a physical address simply for local SEO.
+
+## Safeguarding and registration (November 2026)
+- A dedicated `/safeguarding.html` page uses the safeguarding policy framework supplied with the North Wales Tutoring site source.
+- Designated Safeguarding Lead: Jesse. Direct safeguarding email: safeguarding@nwttutoring.com.
+- The safeguarding Web3Forms access key is separate from the usual tutoring enquiry Web3Forms key. Form submissions are AJAX and show an in-page status / SweetAlert, without redirecting visitors.
+- ICO registration number is displayed in the footer: ZC247571.
+- Tutor directory excludes Howard and Mahima. Their records must not be silently restored during future synchronisation.
+- Shared mobile carousel controls are in `assets/js/carousels.js` and `assets/css/carousels.css`. They progressively enhance card grids and course/exam directories at widths below 768px. Desktop remains a grid.
+- About page uses two distinct, previously unused photos from the provided North Wales Tutoring source archive.
+- Before relying on safeguarding email delivery, send a non-sensitive test form submission and confirm delivery to the designated safeguarding mailbox. Never use a real child safeguarding concern as a test payload.

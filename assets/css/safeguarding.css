@@ -1,0 +1,57 @@
+/* South Wales Tutoring safeguarding page, matching NWT typography & palette. */
+.safeguarding-hero{background:linear-gradient(125deg,#f9f5ff 0%,#fff6fb 74%);border-bottom:1px solid #e9e5f2}
+.safeguarding-hero h1{max-width:920px}
+.safeguarding-hero .breadcrumbs{margin-bottom:1.25rem;font-size:.83rem;display:flex;gap:12px;color:#58536e}
+.safeguarding-hero .breadcrumbs a{color:#070769}
+.safeguarding-hero .btn-brand,.safeguarding-hero .btn-outline-brand{min-height:48px}
+.safeguarding-lead-card{border-radius:24px;padding:30px;background:#070769;color:#fff;box-shadow:0 18px 45px rgba(7,7,105,.16);display:flex;align-items:flex-start;flex-direction:column;gap:8px}
+.safeguarding-lead-card>i{font-size:2.4rem;color:#fd46c1}
+.safeguarding-lead-card span{text-transform:uppercase;letter-spacing:.11em;font-size:.77rem;font-weight:800;color:#e9dafb}
+.safeguarding-lead-card strong{font-family:Fraunces,Georgia,serif;font-size:2rem}
+.safeguarding-lead-card p{margin:0;color:#f5efff}
+.safeguarding-lead-card a{color:#fff;text-decoration:underline;overflow-wrap:anywhere}
+.safeguarding-lead-card small{opacity:.78;margin-top:7px}
+.safeguarding-alert{background:#fff0d9;border-top:1px solid #ffcc85;border-bottom:1px solid #ffcc85;color:#4e320a;padding:15px 0;line-height:1.6}
+.safeguarding-alert strong{margin-right:10px}
+.safeguarding-alert a{color:#070769;font-weight:850;text-decoration:underline}
+.safeguarding-contents{border-radius:18px;border:1px solid #e5daef;background:#f9f6ff;padding:12px 20px;margin:25px 0 30px}
+.safeguarding-contents summary{font-weight:850;color:#070769;cursor:pointer;padding:10px 0;display:flex;align-items:center;justify-content:space-between;list-style:none}
+.safeguarding-contents summary::-webkit-details-marker{display:none}
+.safeguarding-contents summary i{transition:transform .2s}
+.safeguarding-contents[open] summary i{transform:rotate(180deg)}
+.safeguarding-contents nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 20px;border-top:1px solid #ddd5e9;padding:18px 0 10px}
+.safeguarding-contents nav a{font-size:.83rem;color:#39367c;text-decoration:none;line-height:1.45}
+.safeguarding-contents nav a:hover{text-decoration:underline;color:#b60083}
+.safeguarding-policy-list{display:grid;gap:21px}
+.safeguarding-policy-block{border:1px solid #eae5ef;border-radius:22px;background:#fff;box-shadow:0 10px 32px rgba(9,9,106,.035);padding:clamp(22px,3vw,35px);scroll-margin-top:130px}
+.safeguarding-policy-block .policy-number{color:#ba168e;font-weight:850;font-size:.77rem;letter-spacing:.1em;display:block;margin-bottom:4px}
+.safeguarding-policy-block h2{font-size:clamp(1.45rem,2.7vw,2rem);margin-bottom:18px}
+.safeguarding-policy-block h3{font-family:Manrope,sans-serif;font-size:1.06rem;font-weight:850;margin-top:21px}
+.safeguarding-policy-block p,.safeguarding-policy-block li{line-height:1.83;color:#46465e;font-size:.94rem}
+.safeguarding-policy-block li{margin:.45rem 0}
+.safeguarding-policy-block a{text-decoration:underline;overflow-wrap:anywhere}
+.safeguarding-highlight{padding:18px 18px;border-left:4px solid #fd46c1;border-radius:0 12px 12px 0;background:#fff1fa;display:flex;gap:12px}
+.safeguarding-highlight i{color:#a50075;flex-shrink:0}
+.safeguarding-highlight p{margin-bottom:0}
+.safeguarding-report{background:#f6f3ff;scroll-margin-top:110px}
+.safeguarding-report h2{margin-bottom:20px}
+.safeguarding-emergency{padding:20px;border:1px solid #e9ac76;border-radius:16px;background:#fff5e9;margin-bottom:22px}
+.safeguarding-emergency p{margin:8px 0 0}.safeguarding-emergency a{font-weight:900;text-decoration:underline}
+.safeguarding-form-card{background:#fff;border:1px solid #e5d8ee;border-radius:24px;padding:clamp(20px,3vw,36px);box-shadow:0 15px 40px rgba(9,9,106,.06)}
+.safeguarding-form-card h3{font-family:Fraunces,Georgia,serif;margin-bottom:23px;font-size:1.45rem}
+.safeguarding-form-card label{display:block;font-size:.85rem;color:#222257;font-weight:800;margin-bottom:7px}
+.safeguarding-form-card label span{color:#bb007e}
+.safeguarding-form-card input:not([type="hidden"]),.safeguarding-form-card select,.safeguarding-form-card textarea{border:1px solid #d6d1e1;display:block;width:100%;border-radius:12px;padding:11px 13px;background:#fff;color:#17173f;min-height:45px;font-family:Manrope,sans-serif;transition:border-color .2s,box-shadow .2s}
+.safeguarding-form-card input:focus,.safeguarding-form-card textarea:focus,.safeguarding-form-card select:focus{outline:2px solid #fd46c1;outline-offset:1px;border-color:#ae0f86}
+.safeguarding-form-card textarea{resize:vertical;min-height:110px}
+.safeguarding-form-card .field-hint{font-size:.76rem;margin:6px 0 0;color:#68637b}
+.safeguarding-privacy-note{padding:14px 16px;border-radius:12px;background:#f6f2ff;color:#423d65;font-size:.86rem;line-height:1.7;margin-top:20px}
+.safeguarding-privacy-note i{color:#790080;margin-right:4px}
+.safeguarding-form-status{font-weight:700;color:#19195d;margin:12px 0;min-height:1px}
+.safeguarding-form-status[data-status="error"]{color:#aa154d}
+.safeguarding-form-status[data-status="success"]{color:#126b37}
+.safeguarding-submit{border:0;cursor:pointer;width:100%;max-width:420px}
+.safeguarding-submit:disabled{opacity:.65;cursor:wait}
+.safeguarding-bot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+@media(max-width:991.98px){.safeguarding-contents nav{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:767.98px){.safeguarding-lead-card{padding:24px}.safeguarding-contents nav{grid-template-columns:1fr}.safeguarding-policy-block{padding:22px}.safeguarding-form-card{padding:19px}}

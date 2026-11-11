@@ -585,21 +585,6 @@
       "parentProfile": "https://northwalestutoring.com/tutor-anne.html"
     },
     {
-      "name": "Howard",
-      "location": "Blaenau Ffestiniog",
-      "levels": "KS3 · GCSE · A-Level",
-      "subjects": [
-        "Maths",
-        "Further Maths",
-        "Welsh-medium"
-      ],
-      "description": "Qualified secondary Maths teacher providing Welsh-medium and English-medium tuition.",
-      "publishedStartingRateGBP": 33,
-      "photo": "https://northwalestutoring.com/images/howard-trueman-maths-tutor-north-wales-tutoring.jpg",
-      "fullyBooked": false,
-      "parentProfile": "https://northwalestutoring.com/tutor-howard.html"
-    },
-    {
       "name": "Aimee",
       "location": "Lancashire",
       "levels": "GCSE · A-Level",
@@ -614,22 +599,6 @@
       "photo": "https://northwalestutoring.com/images/aimee-tutor-north-wales-tutoring-uk.jpg",
       "fullyBooked": true,
       "parentProfile": "https://northwalestutoring.com/tutor-aimee.html"
-    },
-    {
-      "name": "Mahima",
-      "location": "Chelmsford",
-      "levels": "GCSE · A-Level",
-      "subjects": [
-        "Biology",
-        "Chemistry",
-        "Combined Science",
-        "Maths"
-      ],
-      "description": "Medical student offering GCSE Science, GCSE Maths and A-Level Biology lessons.",
-      "publishedStartingRateGBP": 23,
-      "photo": "https://northwalestutoring.com/images/mahima-biology-tutor-north-wales-tutoring%20-%20Copy.jpg",
-      "fullyBooked": false,
-      "parentProfile": "https://northwalestutoring.com/tutor-mahima.html"
     }
   ]
 }

@@ -44,6 +44,20 @@ except Exception as e:ERRORS.append(f'sitemap.xml: {e}')
 for j in ROOT.rglob('*.json'):
     try:json.loads(j.read_text())
     except Exception as e:ERRORS.append(f'{j.relative_to(ROOT)}: {e}')
+# Additional release invariants for the safeguarding and mobile UX update.
+try:
+    tutors=json.loads((ROOT/'data/tutors.json').read_text())['tutors']
+    if any(t.get('name','').lower() in ('howard','mahima') for t in tutors):ERRORS.append('Former tutors included in public directory data')
+    if len(tutors)!=37:ERRORS.append(f'Expected 37 tutor cards, found {len(tutors)}')
+except Exception as e:ERRORS.append(f'Unable to read tutor data: {e}')
+for candidate in ('safeguarding.html','assets/css/safeguarding.css','assets/js/safeguarding.js','assets/css/carousels.css','assets/js/carousels.js'):
+    if not (ROOT/candidate).is_file():ERRORS.append(f'Missing {candidate}')
+for file in pages:
+    text=file.read_text(encoding='utf-8')
+    if 'assets/css/carousels.css' not in text or 'assets/js/carousels.js' not in text:
+        ERRORS.append(f'Missing mobile carousel assets on {file.relative_to(ROOT)}')
+    if file.name=='our-tutors.html' and ('data-name="howard"' in text or 'data-name="mahima"' in text):
+        ERRORS.append('Deprecated tutor cards still present')
 if not (ROOT/'assets/brand/nwt-shield.png').exists():ERRORS.append('Missing NWT crest')
 if not (ROOT/'assets/brand/nwt-shield-favicon.jpg').exists():ERRORS.append('Missing JPG favicon')
 print(f'Validated {len(pages)} HTML pages and {len(list(ROOT.rglob("*.json")))} JSON files.')

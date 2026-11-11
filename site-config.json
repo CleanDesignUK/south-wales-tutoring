@@ -22,5 +22,12 @@
   "gcseStartingRateGBP": 23,
   "aLevelStartingRateGBP": 28,
   "logo": "assets/brand/nwt-shield.png",
-  "favicon": "assets/brand/nwt-shield-favicon.jpg"
+  "favicon": "assets/brand/nwt-shield-favicon.jpg",
+  "icoRegistrationNumber": "ZC247571",
+  "safeguarding": {
+    "path": "safeguarding.html",
+    "designatedSafeguardingLead": "Jesse",
+    "email": "safeguarding@nwttutoring.com",
+    "web3formsAccessKey": "0bb361ee-84d0-4601-b054-8ef15ab30645"
+  }
 }
