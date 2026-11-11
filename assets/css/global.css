@@ -115,3 +115,114 @@ body,p,a,button,input,textarea,select{font-family:'Manrope',system-ui,sans-serif
 .whatsapp-float img{display:block;width:23px;height:23px;filter:invert(1)}
 .footer-contact img.whatsapp-inline{width:17px;height:17px;filter:invert(1);display:inline-block;vertical-align:middle;margin-right:6px}
 #hero-enquiry{scroll-margin-top:125px}
+
+
+/* 2026-11-11 brand and UI precision update: source tutor portraits remain 1:1. */
+.whatsapp-float,.whatsapp-float:visited{background:var(--pink)!important;box-shadow:0 12px 35px rgba(253,70,193,.34)!important;border-color:#fff!important;color:#fff!important}
+.whatsapp-float:hover,.whatsapp-float:focus-visible{background:#dc268e!important;color:#fff!important}
+.footer-brand img{background:#fff;object-fit:contain;padding:3px;border-radius:12px;width:82px;height:82px;flex-shrink:0}
+.tutor-photo-frame{aspect-ratio:1 / 1;width:100%;position:relative;overflow:hidden;background:#ece8fc}
+.tutor-card-new .tutor-photo-frame img.tutor-photo{display:block;width:100%!important;height:100%!important;aspect-ratio:1/1;object-fit:cover;object-position:center center;max-width:none}
+.tutor-status{position:absolute;right:12px;top:12px;border-radius:999px;background:var(--navy);color:#fff;font-size:.75rem;font-weight:800;padding:7px 12px;box-shadow:0 5px 18px #15115b38}
+.tutor-card-new.tutor-fully-booked{opacity:.87}
+.tutor-card-new.tutor-fully-booked .tutor-bottom strong{color:#626077}
+.tutor-card-new .tutor-details{min-height:298px}
+.review-card{display:flex;flex-direction:column;min-height:100%;height:100%}
+.review-card .review-quote{margin:0 0 19px;font-size:.91rem;line-height:1.76;color:#34354f;font-weight:500;flex:1}
+.review-card .review-author{margin-top:auto}
+.review-card .review-highlight{font-size:1.48rem}
+.course-directory{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+.course-directory-card{position:relative;background:#fff;border:1px solid #e9e0f4;border-radius:19px;padding:21px;display:flex;flex-direction:column;min-height:175px;scroll-margin-top:135px;box-shadow:0 8px 26px rgba(9,9,106,.035)}
+.course-directory-card h3{font-size:1.24rem;margin:0 0 9px}
+.course-directory-card p{font-size:.84rem;color:var(--muted);line-height:1.6;flex:1}
+.course-directory-card .card-prompt{font-size:.79rem}
+/* Multi-column dropdown with real headings and courses instead of vague labels. */
+.nav-dropdown{position:relative}
+.nav-submenu.nav-submenu--mega{width:min(720px,calc(100vw - 30px));display:none;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:12px;row-gap:8px;padding:17px;left:-98px;max-height:min(70vh,590px);overflow-y:auto}
+.nav-dropdown.is-open .nav-submenu.nav-submenu--mega{display:grid}
+.nav-submenu.nav-submenu--exam{width:min(515px,calc(100vw - 30px));grid-template-columns:repeat(2,minmax(0,1fr));left:auto;right:-85px}
+.nav-submenu--mega .menu-view-all{grid-column:1/-1}
+.nav-submenu--mega .menu-view-all>a{background:var(--pink-soft);color:var(--navy);font-weight:900;text-align:center}
+.nav-submenu--mega .menu-group{list-style:none}
+.nav-submenu--mega .menu-group>ul{list-style:none;padding:0;margin:0}
+.nav-submenu--mega .menu-heading{display:block;font-size:.73rem;text-transform:uppercase;letter-spacing:.07em;color:#8453ad;font-weight:900;padding:10px 9px 5px}
+.nav-links .nav-submenu.nav-submenu--mega a{white-space:normal;font-size:.79rem;padding:7px 9px;line-height:1.4}
+/* Each section hero uses distinct editorial treatment, imagery and a per-page palette. */
+.page-hero{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(120deg,var(--hero-wash,#f7f3ff),#fff);padding:66px 0 70px}
+.page-hero::before{content:'';pointer-events:none;position:absolute;width:420px;height:420px;border:2px solid var(--hero-accent,#9674fd);opacity:.16;border-radius:50%;right:-150px;top:-220px;z-index:-1}
+.page-hero .hero-copy{position:relative;z-index:2}
+.page-hero .container{position:relative}
+.page-hero .hero-copy .lead{max-width:700px}
+.page-hero .hero-visual{margin:0;position:relative;isolation:isolate;overflow:visible;align-self:center}
+.page-hero .hero-visual::before{content:'';position:absolute;inset:18px -17px -19px 19px;background:var(--hero-accent,#9674fd);border-radius:28px;transform:rotate(2.8deg);opacity:.72;z-index:-1}
+.page-hero .hero-visual img{width:100%;aspect-ratio:1.15/1;max-height:345px;object-fit:cover;border-radius:25px;box-shadow:0 17px 42px rgba(6,6,69,.15)}
+.page-hero .hero-visual-mark{position:absolute;display:grid;place-items:center;right:-18px;top:-24px;width:74px;height:74px;border:4px solid #fff;background:var(--hero-accent,#9674fd);border-radius:50%;font-size:2.1rem;color:#fff;box-shadow:0 12px 30px #08084e20}
+.page-hero.hero-layout--split>.container,.page-hero.hero-layout--reverse>.container,.page-hero.hero-layout--dark-split>.container{display:grid;grid-template-columns:minmax(0,1.17fr) minmax(0,.83fr);align-items:center;gap:clamp(28px,4vw,64px)}
+.page-hero.hero-layout--reverse>.container{grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr)}
+.page-hero.hero-layout--reverse .hero-visual{grid-column:1;grid-row:1}
+.page-hero.hero-layout--reverse .hero-copy{grid-column:2;grid-row:1}
+.page-hero.hero-layout--dark-split{background:radial-gradient(ellipse at 90% 10%,#333389 0%,transparent 65%),linear-gradient(115deg,#070769,#11103c);color:#f9f7ff}
+.page-hero.hero-layout--dark-split h1,.page-hero.hero-layout--dark-split .lead,.page-hero.hero-layout--dark-split .breadcrumbs,.page-hero.hero-layout--dark-split .breadcrumbs a{color:#fff}
+.page-hero.hero-layout--dark-split .eyebrow{color:#ffe3f3}
+.page-hero.hero-layout--dark-split .hero-visual::before{opacity:1}
+.page-hero.hero-layout--dark-split .btn-brand{background:#fff;color:var(--navy)}
+.page-hero.hero-layout--center{text-align:center;padding:80px 0 92px;background:radial-gradient(circle at 8% 12%,var(--hero-wash),transparent 48%),linear-gradient(140deg,#fff,#f7f1ff)}
+.page-hero.hero-layout--center .hero-copy{max-width:930px;margin:auto}
+.page-hero.hero-layout--center h1,.page-hero.hero-layout--center .lead{max-width:920px;margin-left:auto;margin-right:auto}
+.page-hero.hero-layout--center .breadcrumbs{justify-content:center}
+.page-hero.hero-layout--center .eyebrow{justify-content:center}
+.page-hero.hero-layout--center .hero-visual{max-width:570px;margin:30px auto -150px;opacity:.20;pointer-events:none}
+.page-hero.hero-layout--center .hero-visual img{max-height:140px;object-fit:cover;filter:saturate(.8)}
+.page-hero.hero-layout--center .hero-visual-mark{display:none}
+.page-hero.hero-layout--panel{background:linear-gradient(135deg,var(--hero-wash),#fff 80%);padding:50px 0 65px}
+.page-hero.hero-layout--panel>.container{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.46fr);gap:32px;align-items:center}
+.page-hero.hero-layout--panel .hero-copy{background:#fff;border-left:8px solid var(--hero-accent);border-radius:8px 24px 24px 8px;padding:34px;box-shadow:0 18px 48px #10076a12}
+.page-hero.hero-layout--panel .hero-visual img{border-radius:100px 25px 100px 25px;max-height:300px}
+.page-hero.hero-layout--panel .hero-visual::before{border-radius:100px 25px 100px 25px}
+.page-hero.hero-layout--panel:not(:has(.hero-visual))>.container{grid-template-columns:minmax(0,1fr)}
+/* Page-specific accents and visual signatures keep the pages clearly distinct. */
+.hero-page--maths-tutoring-south-wales h1{text-decoration:underline;text-decoration-color:#d7c3ff;text-decoration-thickness:9px;text-underline-offset:10px}
+.hero-page--physics-tutoring-south-wales::after{content:'E = mc²';position:absolute;bottom:-20px;right:20px;font:800 clamp(4rem,12vw,11rem) 'Fraunces',serif;color:#ffffff0c;pointer-events:none}
+.hero-page--science-tutoring-south-wales .hero-visual img{border-radius:50% 50% 19px 19px}
+.hero-page--english-tutoring-south-wales .hero-copy{transform:rotate(-.4deg)}
+.hero-page--gcse-tutoring-south-wales .hero-copy h1{font-size:clamp(2.8rem,6vw,5.5rem)}
+.hero-page--a-level-tutoring-south-wales .hero-visual-mark{background:var(--gold);color:var(--navy)}
+.hero-page--wjec-tutoring-south-wales .hero-visual::before{transform:rotate(-4deg)}
+.hero-page--our-tutors .hero-visual img{border-radius:18px 120px 18px 120px}
+.hero-page--subjects .hero-visual img{border-radius:65px 65px 18px 18px}
+.hero-page--about .hero-visual img{border-radius:50% 50% 20px 20px}
+.hero-page--blog .hero-visual img{border-radius:20px 80px 20px 80px}
+.hero-page--contact .hero-copy{border-left-color:var(--pink)}
+.hero-page--locations{background:linear-gradient(115deg,#edf3ff,#e9f7fb 55%,#fff)}
+.hero-page--cardiff .hero-visual::before{transform:rotate(-6deg)}
+.hero-page--swansea .hero-visual img{border-radius:65px 16px 65px 16px}
+.hero-page--newport .hero-copy{border-left-color:#8b76d6}
+.hero-page--bridgend .hero-visual-mark{border-radius:22px}
+.hero-page--valleys .hero-visual img{border-radius:45% 45% 12px 12px}
+/* Smaller layouts */
+@media(max-width:1199.98px){.nav-links{gap:.47rem}.nav-dropdown-toggle{font-size:.77rem}.nav-links a:not(.btn-brand){font-size:.76rem}.course-directory{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:991.98px){
+  .nav-submenu.nav-submenu--mega,.nav-submenu.nav-submenu--exam{width:100%;left:auto;right:auto;position:static;max-height:none;grid-template-columns:repeat(2,minmax(0,1fr));box-shadow:none;border:0;padding:9px;background:#fbf7ff}
+  .nav-links{max-height:calc(100dvh - 135px);overscroll-behavior:contain}
+  .page-hero.hero-layout--split>.container,.page-hero.hero-layout--reverse>.container,.page-hero.hero-layout--dark-split>.container{grid-template-columns:1fr .85fr;gap:25px}
+  .page-hero.hero-layout--panel>.container{grid-template-columns:1fr .65fr}
+  .page-hero .hero-visual-mark{width:50px;height:50px;right:-10px;top:-16px}
+}
+@media(max-width:767.98px){
+  .course-directory{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .nav-submenu.nav-submenu--mega,.nav-submenu.nav-submenu--exam{display:none;grid-template-columns:1fr;padding:9px}
+  .nav-dropdown.is-open .nav-submenu.nav-submenu--mega{display:grid}
+  .nav-submenu--mega .menu-view-all{grid-column:1}
+  .page-hero{padding:48px 0}
+  .page-hero.hero-layout--split>.container,.page-hero.hero-layout--reverse>.container,.page-hero.hero-layout--dark-split>.container,.page-hero.hero-layout--panel>.container{display:flex;flex-direction:column;gap:24px;align-items:stretch}
+  .page-hero.hero-layout--reverse .hero-copy{order:0}.page-hero.hero-layout--reverse .hero-visual{order:1}
+  .page-hero .hero-visual img{max-height:230px;aspect-ratio:1.7/1}
+  .page-hero.hero-layout--panel .hero-copy{padding:25px}
+  .page-hero.hero-layout--center .hero-visual{display:none}
+  .page-hero.hero-layout--center{text-align:left;padding:55px 0}
+  .page-hero.hero-layout--center .breadcrumbs,.page-hero.hero-layout--center .eyebrow{justify-content:flex-start}
+  .page-hero.hero-layout--center .hero-copy h1,.page-hero.hero-layout--center .hero-copy .lead{margin-left:0}
+  .tutor-photo-frame{aspect-ratio:1/1}
+  .tutor-card-new .tutor-photo-frame img.tutor-photo{height:100%!important}
+}
+@media(max-width:480px){.course-directory{grid-template-columns:1fr}.review-card{padding:22px}.nav-links .nav-submenu.nav-submenu--mega a{font-size:.84rem}}

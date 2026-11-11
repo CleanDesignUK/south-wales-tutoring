@@ -1,190 +1,635 @@
 {
   "source": "https://northwalestutoring.com/find-tutors-north-wales-uk.html",
   "retrieved": "2026-11-11",
-  "note": "Rates represent individual tutor listed starting rates, not fixed South Wales Tutoring prices. Reconfirm availability before booking.",
+  "rateNote": "Each card shows its individual published starting rate; availability is subject to confirmation.",
   "tutors": [
     {
-      "name": "Bevan",
-      "location": "South Wales · Online",
-      "levels": "GCSE · A-Level",
-      "subjects": [
-        "biology",
-        "chemistry",
-        "maths"
-      ],
-      "description": "Cardiff University medical student supporting WJEC A-Level Biology, Chemistry and Maths, plus GCSE Science and Maths.",
-      "publishedStartingRateGBP": 23,
-      "photo": "https://northwalestutoring.com/images/bevan-biology-chemistry-tutor-uk-2.jpg"
-    },
-    {
-      "name": "Zainab",
-      "location": "Bangor, Wales · Online",
-      "levels": "GCSE · A-Level",
-      "subjects": [
-        "maths",
-        "physics",
-        "biology",
-        "chemistry",
-        "combined",
-        "science"
-      ],
-      "description": "Medical student with 700+ tutoring hours, explaining GCSE and A-Level Maths and Sciences with clear step-by-step support.",
-      "publishedStartingRateGBP": 23,
-      "photo": "https://northwalestutoring.com/images/zainab-science-tutor-uk.jpg"
-    },
-    {
-      "name": "Enzo",
-      "location": "United Kingdom · Online",
+      "name": "Elizabeth",
+      "location": "Sheffield",
       "levels": "KS3 · GCSE · A-Level",
       "subjects": [
-        "maths",
-        "physics"
+        "Biology",
+        "Chemistry",
+        "Combined Science"
       ],
-      "description": "Online Maths and Physics tutor offering intuitive explanations and tailored lessons from KS3 through A-Level.",
-      "publishedStartingRateGBP": 23,
-      "photo": "https://northwalestutoring.com/images/enzo-maths-tutor-uk.jpg"
-    },
-    {
-      "name": "Jordan",
-      "location": "Dagenham, London · Online",
-      "levels": "GCSE · A-Level",
-      "subjects": [
-        "maths",
-        "further",
-        "maths",
-        "physics"
-      ],
-      "description": "Imperial College London MEng student teaching Maths, Further Maths and Physics, with experience from Year 4 to Year 13.",
+      "description": "Biochemistry student at the University of Sheffield teaching Biology, Chemistry and Combined Science.",
       "publishedStartingRateGBP": 28,
-      "photo": "https://northwalestutoring.com/images/jordan-maths-physics-tutor-uk.jpg"
+      "photo": "https://northwalestutoring.com/images/elizabeth-science-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-elizabeth.html"
     },
     {
-      "name": "Katie",
-      "location": "Wrexham, Wales · Online",
-      "levels": "Primary · KS3 · GCSE",
-      "subjects": [
-        "primary",
-        "maths",
-        "english",
-        "history"
-      ],
-      "description": "Primary teacher with SEN experience who provides structured, creative support in Maths, English and earlier school stages.",
-      "publishedStartingRateGBP": 26,
-      "photo": "https://northwalestutoring.com/images/katie-primary-maths-tutor-uk.jpg"
-    },
-    {
-      "name": "Geoffrey",
-      "location": "Preston · Online",
-      "levels": "KS3 · GCSE · A-Level",
-      "subjects": [
-        "physics",
-        "combined",
-        "science",
-        "maths"
-      ],
-      "description": "Qualified Physics and Maths teacher, former senior examiner with over 40 years of classroom experience.",
-      "publishedStartingRateGBP": 48,
-      "photo": "https://northwalestutoring.com/images/geoffrey-science-physics-tutor-uk.jpg"
-    },
-    {
-      "name": "Sihaam",
-      "location": "Harrow, London · Online",
+      "name": "Tomos",
+      "location": "Carmarthen",
       "levels": "GCSE · A-Level",
       "subjects": [
-        "physics",
-        "chemistry",
-        "maths",
-        "biology"
+        "Maths",
+        "Welsh-medium",
+        "WJEC"
       ],
-      "description": "Supportive Science and Maths tutor helping GCSE and A-Level students build confidence with structured explanations.",
-      "publishedStartingRateGBP": 26,
-      "photo": "https://northwalestutoring.com/images/sihaam-tutor-north-wales-tutoring-uk.jpg"
+      "description": "Cardiff University Mathematics student offering WJEC Maths tutoring in Welsh or English.",
+      "publishedStartingRateGBP": 28,
+      "photo": "https://northwalestutoring.com/images/tomos-welsh-maths-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-tomos.html"
+    },
+    {
+      "name": "Arianwen",
+      "location": "Caernarfon",
+      "levels": "KS3 · GCSE",
+      "subjects": [
+        "Biology",
+        "Chemistry",
+        "WJEC"
+      ],
+      "description": "Friendly WJEC Biology and Chemistry support for KS3 and GCSE students.",
+      "publishedStartingRateGBP": 23,
+      "photo": "https://northwalestutoring.com/images/arianwen-biology-chemistry-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-arianwen.html"
+    },
+    {
+      "name": "Georgia",
+      "location": "Cardiff",
+      "levels": "Primary · KS3 · GCSE · A-Level",
+      "subjects": [
+        "Primary",
+        "11+",
+        "Maths",
+        "Biology",
+        "Chemistry"
+      ],
+      "description": "Cardiff medical student supporting 11+, Primary, Foundation GCSE Maths, Biology and Chemistry.",
+      "publishedStartingRateGBP": 28,
+      "photo": "https://northwalestutoring.com/images/georgia-science-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-georgia.html"
+    },
+    {
+      "name": "Bevan",
+      "location": "South Wales",
+      "levels": "GCSE · A-Level",
+      "subjects": [
+        "Biology",
+        "Chemistry",
+        "Maths",
+        "WJEC"
+      ],
+      "description": "Cardiff University medical student specialising in WJEC Biology, Chemistry and Maths.",
+      "publishedStartingRateGBP": 28,
+      "photo": "https://northwalestutoring.com/images/bevan-biology-chemistry-tutor-uk-2.jpg",
+      "fullyBooked": true,
+      "parentProfile": "https://northwalestutoring.com/tutor-bevan.html"
     },
     {
       "name": "Muskan",
-      "location": "London · Online",
+      "location": "London",
       "levels": "Primary · KS3 · GCSE · A-Level",
       "subjects": [
-        "maths",
-        "biology",
-        "chemistry",
-        "english",
-        "ucat"
+        "Maths",
+        "Biology",
+        "Chemistry",
+        "Physics",
+        "Combined Science",
+        "English",
+        "UCAT"
       ],
-      "description": "Experienced Maths, Science and English tutor who also supports Biology and UCAT preparation.",
+      "description": "Personalised Maths, Science and English tuition, including UCAT preparation.",
       "publishedStartingRateGBP": 25,
-      "photo": "https://northwalestutoring.com/images/muskan-tutor-north-wales-tutoring-uk.jpg"
+      "photo": "https://northwalestutoring.com/images/muskan-tutor-north-wales-tutoring-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-muskan.html"
     },
     {
-      "name": "Patrick",
-      "location": "Manchester · Online",
-      "levels": "KS3 · GCSE",
+      "name": "Lucy",
+      "location": "United Kingdom",
+      "levels": "Primary · KS3 · GCSE · A-Level",
       "subjects": [
-        "english",
-        "welsh"
+        "English",
+        "Maths",
+        "Science",
+        "Physics"
       ],
-      "description": "English tutor and Welsh speaker offering English-language support and lessons through Welsh or English medium.",
+      "description": "Adaptive Maths, English and Science lessons with customised exam-style questions.",
       "publishedStartingRateGBP": 28,
-      "photo": "https://northwalestutoring.com/images/patrick-ks3-english-tutor-uk.jpg"
+      "photo": "https://northwalestutoring.com/images/lucy-north-wales-tutoring-tutor.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-lucy.html"
     },
     {
-      "name": "Madeleine",
-      "location": "Leeds · Online",
+      "name": "Grace",
+      "location": "Leicestershire",
+      "levels": "KS3 · GCSE · A-Level",
+      "subjects": [
+        "Maths",
+        "Further Maths"
+      ],
+      "description": "Patient GCSE and A-Level Maths and Further Maths tutoring with focused exam technique.",
+      "publishedStartingRateGBP": 28,
+      "photo": "https://northwalestutoring.com/images/grace-maths-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-grace.html"
+    },
+    {
+      "name": "May",
+      "location": "London",
+      "levels": "GCSE · A-Level · IB · University",
+      "subjects": [
+        "Business",
+        "Economics",
+        "Chinese",
+        "History",
+        "Geography",
+        "Art & Design"
+      ],
+      "description": "Experienced academic coach and university examiner covering Business, Economics, Chinese and humanities.",
+      "publishedStartingRateGBP": 38,
+      "photo": "https://northwalestutoring.com/images/may-business-economics-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-may.html"
+    },
+    {
+      "name": "Sihaam",
+      "location": "Harrow",
+      "levels": "GCSE · A-Level",
+      "subjects": [
+        "Physics",
+        "Chemistry",
+        "Maths",
+        "Biology"
+      ],
+      "description": "Clear, structured GCSE and A-Level Science and Maths tuition.",
+      "publishedStartingRateGBP": 26,
+      "photo": "https://northwalestutoring.com/images/sihaam-tutor-north-wales-tutoring-uk.jpg",
+      "fullyBooked": true,
+      "parentProfile": "https://northwalestutoring.com/tutor-sihaam.html"
+    },
+    {
+      "name": "Shara",
+      "location": "Mitcham",
+      "levels": "KS3 · GCSE · A-Level",
+      "subjects": [
+        "Biology",
+        "Chemistry",
+        "Physics",
+        "Combined Science"
+      ],
+      "description": "Qualified Science teacher with QTS and more than seven years of tutoring experience.",
+      "publishedStartingRateGBP": 33,
+      "photo": "https://northwalestutoring.com/images/shara-science-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-shara.html"
+    },
+    {
+      "name": "Shannon",
+      "location": "Merthyr Vale",
+      "levels": "Primary · KS3 · GCSE · Adults",
+      "subjects": [
+        "English",
+        "Welsh",
+        "Spanish",
+        "MFL",
+        "Primary"
+      ],
+      "description": "Qualified English, Welsh and languages teacher with additional learning needs experience.",
+      "publishedStartingRateGBP": 45,
+      "photo": "https://northwalestutoring.com/images/shannon-english-welsh-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-shannon.html"
+    },
+    {
+      "name": "Jillian",
+      "location": "Gwynedd",
       "levels": "Primary · KS3 · GCSE",
       "subjects": [
-        "primary",
-        "french",
-        "spanish",
-        "maths"
+        "Primary",
+        "Maths",
+        "English",
+        "Biology",
+        "Chemistry",
+        "Physics",
+        "Combined Science"
       ],
-      "description": "Qualified teacher offering Primary Maths and English, French, Spanish, SATs and 11+ preparation.",
-      "publishedStartingRateGBP": 38,
-      "photo": "https://northwalestutoring.com/images/madeleine-french-spanish-tutor-uk.jpg"
-    },
-    {
-      "name": "Thomas",
-      "location": "Leicester · Online",
-      "levels": "GCSE · A-Level · University",
-      "subjects": [
-        "maths",
-        "further",
-        "maths",
-        "tmua"
-      ],
-      "description": "PhD-qualified Mathematics tutor supporting GCSE, A-Level, university Maths and TMUA admissions preparation.",
-      "publishedStartingRateGBP": 43,
-      "photo": "https://northwalestutoring.com/images/thomas-maths-tmua-tutor-uk.jpg"
+      "description": "Patient, personalised Primary, Maths, English and Science tutor with 13 years of experience.",
+      "publishedStartingRateGBP": 48,
+      "photo": "https://northwalestutoring.com/images/jillian-primary-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-jillian.html"
     },
     {
       "name": "Siôn",
-      "location": "Cwmbran, South Wales · Online",
+      "location": "Cwmbran",
       "levels": "Primary · KS3 · GCSE · A-Level",
       "subjects": [
-        "maths",
-        "welsh"
+        "Maths",
+        "Welsh-medium",
+        "WJEC"
       ],
-      "description": "Welsh-medium Maths specialist with 11+ years and approximately 3,400 hours of one-to-one tutoring.",
+      "description": "Welsh-medium Maths tutor with over 11 years of experience and approximately 3,400 tutoring hours.",
       "publishedStartingRateGBP": 41,
-      "photo": "https://northwalestutoring.com/images/sion-welsh-maths-tutor-uk.jpg"
+      "photo": "https://northwalestutoring.com/images/sion-welsh-maths-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-sion.html"
+    },
+    {
+      "name": "Solomon",
+      "location": "London",
+      "levels": "GCSE · A-Level",
+      "subjects": [
+        "Maths",
+        "Geography",
+        "Chemistry",
+        "English"
+      ],
+      "description": "Cambridge graduate supporting GCSE and A-Level Maths and Geography, with targeted revision.",
+      "publishedStartingRateGBP": 38,
+      "photo": "https://northwalestutoring.com/images/Solomon-geography-maths-tutor.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-solomon.html"
+    },
+    {
+      "name": "Mandy",
+      "location": "Sittingbourne",
+      "levels": "Primary · KS3 · GCSE",
+      "subjects": [
+        "Primary",
+        "Maths",
+        "English",
+        "Biology",
+        "Chemistry",
+        "Combined Science",
+        "11+"
+      ],
+      "description": "Qualified teacher offering Primary, Maths, English and Science tuition with SEND experience.",
+      "publishedStartingRateGBP": 35,
+      "photo": "https://northwalestutoring.com/images/mandy-primary-maths-english-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-mandy.html"
+    },
+    {
+      "name": "Madeleine",
+      "location": "Leeds",
+      "levels": "Primary · KS3 · GCSE",
+      "subjects": [
+        "Primary",
+        "Maths",
+        "English",
+        "French",
+        "Spanish",
+        "SATs",
+        "11+"
+      ],
+      "description": "Qualified French and Spanish teacher supporting Primary lessons, SATs and 11+ preparation.",
+      "publishedStartingRateGBP": 38,
+      "photo": "https://northwalestutoring.com/images/madeleine-french-spanish-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-madeleine.html"
+    },
+    {
+      "name": "Jake",
+      "location": "Eastbourne",
+      "levels": "Primary · KS3 · GCSE · A-Level · University · Adults",
+      "subjects": [
+        "Maths",
+        "University Maths"
+      ],
+      "description": "PhD Mathematics tutor with 14 years of experience from Primary to undergraduate study.",
+      "publishedStartingRateGBP": 38,
+      "photo": "https://northwalestutoring.com/images/jake-maths-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-jake.html"
+    },
+    {
+      "name": "Usman",
+      "location": "London",
+      "levels": "IGCSE · A-Level",
+      "subjects": [
+        "Biology",
+        "Chemistry",
+        "Cambridge IGCSE"
+      ],
+      "description": "Qualified Biology and Chemistry teacher with more than 16 years of experience.",
+      "publishedStartingRateGBP": 33,
+      "photo": "https://northwalestutoring.com/images/usman-biology-chemistry-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-usman.html"
+    },
+    {
+      "name": "Shihab",
+      "location": "Birmingham",
+      "levels": "KS3 · GCSE · A-Level",
+      "subjects": [
+        "Maths",
+        "Business",
+        "TMUA",
+        "Functional Skills"
+      ],
+      "description": "Specialist Maths, Business, Functional Skills and TMUA tutor with 10 years of experience.",
+      "publishedStartingRateGBP": 40,
+      "photo": "https://northwalestutoring.com/images/shihab-tutor-maths-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-shihab.html"
+    },
+    {
+      "name": "Wahida",
+      "location": "Birmingham",
+      "levels": "KS3 · GCSE · A-Level",
+      "subjects": [
+        "English",
+        "English Language",
+        "English Literature"
+      ],
+      "description": "Former Head of English and AQA and Edexcel examiner supporting Language and Literature.",
+      "publishedStartingRateGBP": 48,
+      "photo": "https://northwalestutoring.com/images/wahida-english-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-wahida.html"
+    },
+    {
+      "name": "Martin",
+      "location": "Colchester",
+      "levels": "KS3 · GCSE · A-Level",
+      "subjects": [
+        "Maths",
+        "Combined Science",
+        "Computer Science"
+      ],
+      "description": "STEM tutor supporting Maths, Combined Science and Computer Science through problem solving.",
+      "publishedStartingRateGBP": 26,
+      "photo": "https://northwalestutoring.com/images/martin-tutor-north-wales-tutoring-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-martin.html"
+    },
+    {
+      "name": "Jordan",
+      "location": "Dagenham",
+      "levels": "GCSE · A-Level",
+      "subjects": [
+        "Maths",
+        "Further Maths",
+        "Physics"
+      ],
+      "description": "Imperial College London MEng student supporting GCSE and A-Level Maths and Physics.",
+      "publishedStartingRateGBP": 28,
+      "photo": "https://northwalestutoring.com/images/jordan-maths-physics-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-jordan.html"
+    },
+    {
+      "name": "Andy",
+      "location": "Rutland",
+      "levels": "KS3 · GCSE · A-Level",
+      "subjects": [
+        "Physics"
+      ],
+      "description": "Former Head of Physics with over 27 years of classroom experience and interactive teaching.",
+      "publishedStartingRateGBP": 48,
+      "photo": "https://northwalestutoring.com/images/andy-physics-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-andy.html"
+    },
+    {
+      "name": "Siân",
+      "location": "Carmarthenshire",
+      "levels": "Primary · GCSE · Children & Adults",
+      "subjects": [
+        "Primary",
+        "Welsh",
+        "Maths",
+        "English",
+        "Health & Social Care"
+      ],
+      "description": "Qualified Welsh-speaking Primary teacher and WJEC Health and Social Care examiner.",
+      "publishedStartingRateGBP": 38,
+      "photo": "https://northwalestutoring.com/images/sian-primary-and-welsh-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-sian.html"
+    },
+    {
+      "name": "Geoffrey",
+      "location": "Preston",
+      "levels": "KS3 · GCSE · A-Level",
+      "subjects": [
+        "Physics",
+        "Combined Science",
+        "Maths"
+      ],
+      "description": "Qualified Physics teacher and former senior examiner with decades of experience.",
+      "publishedStartingRateGBP": 48,
+      "photo": "https://northwalestutoring.com/images/geoffrey-science-physics-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-geoffrey.html"
+    },
+    {
+      "name": "Thomas",
+      "location": "Leicester",
+      "levels": "GCSE · A-Level · University · TMUA",
+      "subjects": [
+        "Maths",
+        "TMUA",
+        "University Maths"
+      ],
+      "description": "PhD-qualified Maths tutor supporting GCSE, A-Level, university Maths and TMUA.",
+      "publishedStartingRateGBP": 43,
+      "photo": "https://northwalestutoring.com/images/thomas-maths-tmua-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-thomas.html"
+    },
+    {
+      "name": "Katie",
+      "location": "Wrexham",
+      "levels": "Primary · KS3 · GCSE",
+      "subjects": [
+        "Primary",
+        "Maths",
+        "English",
+        "History",
+        "Art"
+      ],
+      "description": "Primary teacher providing creative, structured Maths, English and SEN support.",
+      "publishedStartingRateGBP": 26,
+      "photo": "https://northwalestutoring.com/images/katie-primary-maths-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-katie.html"
+    },
+    {
+      "name": "Zainab",
+      "location": "Bangor",
+      "levels": "GCSE · A-Level",
+      "subjects": [
+        "Maths",
+        "Biology",
+        "Chemistry",
+        "Physics",
+        "Combined Science"
+      ],
+      "description": "Medical student with over 700 tutoring hours teaching Maths and Science.",
+      "publishedStartingRateGBP": 23,
+      "photo": "https://northwalestutoring.com/images/zainab-science-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-zainab.html"
+    },
+    {
+      "name": "Patrick",
+      "location": "Manchester",
+      "levels": "Secondary English",
+      "subjects": [
+        "English",
+        "Welsh-medium"
+      ],
+      "description": "Secondary English tutor and Welsh speaker teaching through Welsh or English.",
+      "publishedStartingRateGBP": 28,
+      "photo": "https://northwalestutoring.com/images/patrick-ks3-english-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-patrick.html"
     },
     {
       "name": "Ffion",
-      "location": "Llandudno · Online",
-      "levels": "GCSE · A-Level · Vocational",
+      "location": "Llandudno",
+      "levels": "GCSE · A-Level · Level 2 · Level 3",
       "subjects": [
-        "health",
-        "&",
-        "social",
-        "care",
-        "childcare",
-        "travel",
-        "&",
-        "tourism",
-        "sociology"
+        "Health & Social Care",
+        "Childcare",
+        "Child Development",
+        "Travel & Tourism",
+        "Sociology"
       ],
-      "description": "Experienced examiner and tutor of Health and Social Care, Child Development, Childcare and other vocational subjects.",
+      "description": "Experienced examiner covering Health and Social Care, Childcare and vocational subjects.",
       "publishedStartingRateGBP": 36,
-      "photo": "https://northwalestutoring.com/images/ffion-health-social-care-tutor-uk.jpg"
+      "photo": "https://northwalestutoring.com/images/ffion-health-social-care-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-ffion.html"
+    },
+    {
+      "name": "Bryan",
+      "location": "Online UK tutor",
+      "levels": "Primary · KS3 · GCSE · A-Level · Adults",
+      "subjects": [
+        "English",
+        "Welsh",
+        "ESOL / EFL",
+        "Humanities"
+      ],
+      "description": "TEFL-qualified English and Welsh tutor with more than 12 years of experience.",
+      "publishedStartingRateGBP": 28,
+      "photo": "https://northwalestutoring.com/images/bryan-welsh-english-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-bryan.html"
+    },
+    {
+      "name": "Donna",
+      "location": "North Wales",
+      "levels": "Primary · Nursery to Year 6",
+      "subjects": [
+        "Primary",
+        "KS1",
+        "Maths",
+        "English",
+        "Phonics"
+      ],
+      "description": "Qualified Primary teacher with 25 years of classroom experience, specialising in phonics and literacy.",
+      "publishedStartingRateGBP": 38,
+      "photo": "https://northwalestutoring.com/images/donna-primary-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-donna.html"
+    },
+    {
+      "name": "Caroline",
+      "location": "Ludlow",
+      "levels": "Primary · KS3 · GCSE · A-Level",
+      "subjects": [
+        "Maths",
+        "Biology",
+        "Chemistry",
+        "Physics",
+        "Combined Science",
+        "11+",
+        "13+"
+      ],
+      "description": "Qualified Maths and Science tutor and long-serving GCSE and A-Level examiner.",
+      "publishedStartingRateGBP": 43,
+      "photo": "https://northwalestutoring.com/images/caroline-maths-science-tutor-uk.jpg",
+      "fullyBooked": true,
+      "parentProfile": "https://northwalestutoring.com/tutor-caroline.html"
+    },
+    {
+      "name": "Sarah",
+      "location": "Morecambe",
+      "levels": "Primary · KS3 · GCSE",
+      "subjects": [
+        "Primary",
+        "English",
+        "ESOL / EFL",
+        "Music"
+      ],
+      "description": "Experienced English, ESOL and Music teacher with 30 years of experience.",
+      "publishedStartingRateGBP": 36,
+      "photo": "https://northwalestutoring.com/images/sarah-english-music-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-sarah.html"
+    },
+    {
+      "name": "Anne",
+      "location": "Dorset",
+      "levels": "KS3 · GCSE · A-Level",
+      "subjects": [
+        "Biology",
+        "Chemistry",
+        "Physics",
+        "Combined Science"
+      ],
+      "description": "Former Head of Science and examiner with over 30 years of teaching experience.",
+      "publishedStartingRateGBP": 45,
+      "photo": "https://northwalestutoring.com/images/anne-physics-tutor-uk.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-anne.html"
+    },
+    {
+      "name": "Howard",
+      "location": "Blaenau Ffestiniog",
+      "levels": "KS3 · GCSE · A-Level",
+      "subjects": [
+        "Maths",
+        "Further Maths",
+        "Welsh-medium"
+      ],
+      "description": "Qualified secondary Maths teacher providing Welsh-medium and English-medium tuition.",
+      "publishedStartingRateGBP": 33,
+      "photo": "https://northwalestutoring.com/images/howard-trueman-maths-tutor-north-wales-tutoring.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-howard.html"
+    },
+    {
+      "name": "Aimee",
+      "location": "Lancashire",
+      "levels": "GCSE · A-Level",
+      "subjects": [
+        "English",
+        "Geography",
+        "Biology",
+        "Media & Film"
+      ],
+      "description": "English and Humanities tutor supporting GCSE confidence and exam preparation.",
+      "publishedStartingRateGBP": 25,
+      "photo": "https://northwalestutoring.com/images/aimee-tutor-north-wales-tutoring-uk.jpg",
+      "fullyBooked": true,
+      "parentProfile": "https://northwalestutoring.com/tutor-aimee.html"
+    },
+    {
+      "name": "Mahima",
+      "location": "Chelmsford",
+      "levels": "GCSE · A-Level",
+      "subjects": [
+        "Biology",
+        "Chemistry",
+        "Combined Science",
+        "Maths"
+      ],
+      "description": "Medical student offering GCSE Science, GCSE Maths and A-Level Biology lessons.",
+      "publishedStartingRateGBP": 23,
+      "photo": "https://northwalestutoring.com/images/mahima-biology-tutor-north-wales-tutoring%20-%20Copy.jpg",
+      "fullyBooked": false,
+      "parentProfile": "https://northwalestutoring.com/tutor-mahima.html"
     }
   ]
 }
