@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cleandesignuk.github.io/south-wales-tutoring/sitemap.xml

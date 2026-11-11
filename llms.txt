@@ -1,0 +1,26 @@
+# South Wales Tutoring
+
+> Online one-to-one tutoring across South Wales, part of North Wales Tutoring Group. Motto: Delivering a better future.
+
+Website: https://cleandesignuk.github.io/south-wales-tutoring/
+Parent group: https://nwttutoring.com/
+Contact: southwales@nwttutoring.com | +44 7480 231362
+Social: https://www.facebook.com/southwalestutoring/ | https://www.instagram.com/southwalestutoring/
+
+South Wales Tutoring provides online Primary, KS3, GCSE, GCSE resit, AS and A-Level subject support. Core subjects include Maths, Physics, Chemistry, Biology, Combined Science and English. Exam boards supported through the tutor network include WJEC, Eduqas, AQA, Edexcel, OCR and CAIE, subject to qualification and tutor availability.
+
+Service areas (online, not walk-in centres): Cardiff, Swansea, Newport, Bridgend, Vale of Glamorgan, Rhondda Cynon Taf, Caerphilly, Merthyr Tydfil, Neath Port Talbot, Torfaen, Blaenau Gwent, Monmouthshire, Carmarthenshire and nearby towns.
+
+Starting hourly rates: KS3/GCSE £20; AS/A-Level £25. Individual tutors may have different rates. Lessons are arranged after an enquiry; no availability or results are guaranteed.
+
+Key guides:
+- https://cleandesignuk.github.io/south-wales-tutoring/maths-tutoring-south-wales.html
+- https://cleandesignuk.github.io/south-wales-tutoring/physics-tutoring-south-wales.html
+- https://cleandesignuk.github.io/south-wales-tutoring/wjec-tutoring-south-wales.html
+- https://cleandesignuk.github.io/south-wales-tutoring/gcse-tutoring-south-wales.html
+- https://cleandesignuk.github.io/south-wales-tutoring/a-level-tutoring-south-wales.html
+- https://cleandesignuk.github.io/south-wales-tutoring/locations.html
+- https://cleandesignuk.github.io/south-wales-tutoring/blog.html
+- https://cleandesignuk.github.io/south-wales-tutoring/contact.html
+
+This optional llms.txt is provided as plain-text context only. It is not a search-ranking or AI-citation guarantee.

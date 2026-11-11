@@ -1,0 +1,22 @@
+{
+  "brand": "South Wales Tutoring",
+  "parent": "North Wales Tutoring Group",
+  "parentUrl": "https://nwttutoring.com/",
+  "siblingUrl": "https://northwalestutoring.com/",
+  "siteUrl": "https://cleandesignuk.github.io/south-wales-tutoring/",
+  "siteUrlNote": "Temporary GitHub Pages preview URL. Replace with the confirmed custom domain when DNS and hosting are configured.",
+  "email": "southwales@nwttutoring.com",
+  "phoneDisplay": "+44 7480 231362",
+  "phoneE164": "+447480231362",
+  "whatsapp": "https://wa.me/447480231362",
+  "facebook": "https://www.facebook.com/southwalestutoring/",
+  "instagram": "https://www.instagram.com/southwalestutoring/",
+  "web3formsAccessKey": "9e3cc5d1-b748-4dd6-9d2b-90cc97ad39e0",
+  "palette": {
+    "navy": "#09096a",
+    "pink": "#ff28a8",
+    "violet": "#9674fd",
+    "gold": "#ffde66"
+  },
+  "motto": "Delivering a better future"
+}
