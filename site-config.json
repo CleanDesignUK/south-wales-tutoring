@@ -4,7 +4,7 @@
   "parentUrl": "https://nwttutoring.com/",
   "siblingUrl": "https://northwalestutoring.com/",
   "siteUrl": "https://cleandesignuk.github.io/south-wales-tutoring/",
-  "siteUrlNote": "Temporary GitHub Pages preview URL. Replace with the confirmed custom domain when DNS and hosting are configured.",
+  "siteUrlNote": "Published preview through GitHub Pages. Update URL after custom domain is connected.",
   "email": "southwales@nwttutoring.com",
   "phoneDisplay": "+44 7480 231362",
   "phoneE164": "+447480231362",
@@ -13,10 +13,14 @@
   "instagram": "https://www.instagram.com/southwalestutoring/",
   "web3formsAccessKey": "9e3cc5d1-b748-4dd6-9d2b-90cc97ad39e0",
   "palette": {
-    "navy": "#09096a",
-    "pink": "#ff28a8",
+    "navy": "#070769",
+    "pink": "#fd46c1",
     "violet": "#9674fd",
-    "gold": "#ffde66"
+    "gold": "#ffc72d"
   },
-  "motto": "Delivering a better future"
+  "motto": "Delivering a better future",
+  "gcseStartingRateGBP": 23,
+  "aLevelStartingRateGBP": 28,
+  "logo": "assets/brand/nwt-shield.png",
+  "favicon": "assets/brand/nwt-shield-favicon.jpg"
 }

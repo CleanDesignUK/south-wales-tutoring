@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Validate site HTML, JSON-LD and internal links
+        run: python tools/validate_site.py
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
