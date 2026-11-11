@@ -30,7 +30,11 @@ for file in pages:
         try:json.loads(item)
         except Exception as e:ERRORS.append(f'{file.relative_to(ROOT)} invalid JSON-LD: {e}')
     if 'Robert' in text or 'Ashley' in text:ERRORS.append(f'{file.relative_to(ROOT)} contains obsolete tutor')
-    if file.name != 'our-tutors.html' and ('£20/hr' in text or '£25/hr' in text):ERRORS.append(f'{file.relative_to(ROOT)} contains obsolete rate')
+    # Distinguish obsolete advertised starting prices from individual tutor prices.
+    # For example, Muskan's independently published rate of £25/hr is valid.
+    marketing_text=re.sub(r'<article\b[^>]*class="[^"]*\btutor-card-new\b[^"]*"[^>]*>[\s\S]*?</article>', '', text)
+    if file.name != 'our-tutors.html' and ('£20/hr' in marketing_text or '£25/hr' in marketing_text):
+        ERRORS.append(f'{file.relative_to(ROOT)} contains obsolete general starting rate')
     if '<site-header' not in text or '<site-footer' not in text:ERRORS.append(f'{file.relative_to(ROOT)} missing shared component')
     if 'nwt-shield-favicon.jpg' not in text:ERRORS.append(f'{file.relative_to(ROOT)} missing JPG favicon')
     if 'https://southwalestutoring.com/' in text:ERRORS.append(f'{file.relative_to(ROOT)} uses unconfigured custom domain')
@@ -49,6 +53,18 @@ try:
     tutors=json.loads((ROOT/'data/tutors.json').read_text())['tutors']
     if any(t.get('name','').lower() in ('howard','mahima') for t in tutors):ERRORS.append('Former tutors included in public directory data')
     if len(tutors)!=37:ERRORS.append(f'Expected 37 tutor cards, found {len(tutors)}')
+    zainab=[t for t in tutors if t.get('name')=='Zainab']
+    if len(zainab)!=1 or zainab[0].get('publishedStartingRateGBP')!=28:
+        ERRORS.append('Zainab must be listed at £28/hr')
+    homepage=(ROOT/'index.html').read_text(encoding='utf-8')
+    if 'data-name="muskan"' not in homepage or 'data-name="zainab"' in homepage:
+        ERRORS.append('Homepage tutor showcase must feature Muskan instead of Zainab')
+    directory=(ROOT/'our-tutors.html').read_text(encoding='utf-8')
+    zainab_card=re.search(r'data-name="zainab"[\s\S]*?</article>', directory)
+    if not zainab_card or 'From £28/hr' not in zainab_card.group(0):
+        ERRORS.append('Tutor directory must show Zainab at £28/hr')
+    if 'ZC247571' in (ROOT/'assets/js/components.js').read_text(encoding='utf-8'):
+        ERRORS.append('Footer must not claim group ICO registration')
 except Exception as e:ERRORS.append(f'Unable to read tutor data: {e}')
 for candidate in ('safeguarding.html','assets/css/safeguarding.css','assets/js/safeguarding.js','assets/css/carousels.css','assets/js/carousels.js'):
     if not (ROOT/candidate).is_file():ERRORS.append(f'Missing {candidate}')
