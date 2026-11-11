@@ -23,7 +23,6 @@
   "aLevelStartingRateGBP": 28,
   "logo": "assets/brand/nwt-shield.png",
   "favicon": "assets/brand/nwt-shield-favicon.jpg",
-  "icoRegistrationNumber": "ZC247571",
   "safeguarding": {
     "path": "safeguarding.html",
     "designatedSafeguardingLead": "Jesse",

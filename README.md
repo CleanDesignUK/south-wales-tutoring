@@ -50,7 +50,6 @@ The current canonicals, JSON-LD, sitemap, `robots.txt` and social URLs use the G
 - A dedicated `/safeguarding.html` page uses the safeguarding policy framework supplied with the North Wales Tutoring site source.
 - Designated Safeguarding Lead: Jesse. Direct safeguarding email: safeguarding@nwttutoring.com.
 - The safeguarding Web3Forms access key is separate from the usual tutoring enquiry Web3Forms key. Form submissions are AJAX and show an in-page status / SweetAlert, without redirecting visitors.
-- ICO registration number is displayed in the footer: ZC247571.
 - Tutor directory excludes Howard and Mahima. Their records must not be silently restored during future synchronisation.
 - Shared mobile carousel controls are in `assets/js/carousels.js` and `assets/css/carousels.css`. They progressively enhance card grids and course/exam directories at widths below 768px. Desktop remains a grid.
 - About page uses two distinct, previously unused photos from the provided North Wales Tutoring source archive.
