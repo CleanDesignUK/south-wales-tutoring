@@ -2,7 +2,7 @@
 
 Static, responsive website for South Wales Tutoring, part of [North Wales Tutoring Group](https://nwttutoring.com/). The site provides online one-to-one tutoring for South Wales students and is published by GitHub Pages.
 
-**Live preview:** https://cleandesignuk.github.io/south-wales-tutoring/
+**Live preview:** https://southwalestutoring.com/
 
 ## Current offer (11 November 2026)
 
@@ -71,3 +71,7 @@ python tools/validate_site.py
 ```
 
 The site remains static and deploys without Python package installation. Metadata and structured data can help machine understanding but do not guarantee rankings, rich results, AI citations or map-pack listings. The `llms.txt` page is informational, not a ranking signal. Recheck metadata after connecting a custom domain.
+
+## Social sharing image and custom domain
+
+The NWT landscape social preview is published at `assets/brand/nwt-social-preview.jpg` (1200 × 630), and all HTML pages use it for Open Graph and Twitter previews. The custom domain `southwalestutoring.com` is declared in `CNAME`. Verify GitHub Pages custom-domain settings and Hostinger DNS before relying on it for public access.

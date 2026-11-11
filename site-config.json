@@ -3,8 +3,8 @@
   "parent": "North Wales Tutoring Group",
   "parentUrl": "https://nwttutoring.com/",
   "siblingUrl": "https://northwalestutoring.com/",
-  "siteUrl": "https://cleandesignuk.github.io/south-wales-tutoring/",
-  "siteUrlNote": "Current GitHub Pages production URL. Update all canonical, schema and sitemap URLs when a verified custom domain is configured.",
+  "siteUrl": "https://southwalestutoring.com/",
+  "siteUrlNote": "Custom-domain production URL",
   "email": "southwales@nwttutoring.com",
   "phoneDisplay": "+44 7480 231362",
   "phoneE164": "+447480231362",
@@ -36,5 +36,6 @@
     "consentStorageKey": "swt-cookie-consent-v2",
     "safeguardingExcluded": true,
     "ga4ConfiguredInGTM": false
-  }
+  },
+  "socialSharingImage": "assets/brand/nwt-social-preview.jpg"
 }

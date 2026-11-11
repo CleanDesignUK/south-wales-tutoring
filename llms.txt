@@ -2,7 +2,7 @@
 
 > Delivering a better future through personalised online tutoring across South Wales.
 
-Official website: https://cleandesignuk.github.io/south-wales-tutoring/
+Official website: https://southwalestutoring.com/
 Enquiries: southwales@nwttutoring.com
 WhatsApp messages: https://wa.me/447480231362
 Facebook: https://www.facebook.com/southwalestutoring/
@@ -18,23 +18,23 @@ Levels and examinations: Primary, KS3, SATs, 11+, 13+, GCSE, AS-Level, A-Level, 
 Published general starting rates: GCSE from £23 per hour and A-Level from £28 per hour. Individual tutors can charge different rates; exact price and availability must be confirmed before booking. No guaranteed outcomes are claimed.
 
 ## Tutoring and location pages
-- https://cleandesignuk.github.io/south-wales-tutoring/subjects.html
-- https://cleandesignuk.github.io/south-wales-tutoring/maths-tutoring-south-wales.html
-- https://cleandesignuk.github.io/south-wales-tutoring/physics-tutoring-south-wales.html
-- https://cleandesignuk.github.io/south-wales-tutoring/science-tutoring-south-wales.html
-- https://cleandesignuk.github.io/south-wales-tutoring/gcse-tutoring-south-wales.html
-- https://cleandesignuk.github.io/south-wales-tutoring/a-level-tutoring-south-wales.html
-- https://cleandesignuk.github.io/south-wales-tutoring/wjec-tutoring-south-wales.html
-- https://cleandesignuk.github.io/south-wales-tutoring/exam-preparation.html
-- https://cleandesignuk.github.io/south-wales-tutoring/locations.html
-- https://cleandesignuk.github.io/south-wales-tutoring/areas/cardiff.html
-- https://cleandesignuk.github.io/south-wales-tutoring/areas/swansea.html
-- https://cleandesignuk.github.io/south-wales-tutoring/areas/newport.html
-- https://cleandesignuk.github.io/south-wales-tutoring/our-tutors.html
+- https://southwalestutoring.com/subjects.html
+- https://southwalestutoring.com/maths-tutoring-south-wales.html
+- https://southwalestutoring.com/physics-tutoring-south-wales.html
+- https://southwalestutoring.com/science-tutoring-south-wales.html
+- https://southwalestutoring.com/gcse-tutoring-south-wales.html
+- https://southwalestutoring.com/a-level-tutoring-south-wales.html
+- https://southwalestutoring.com/wjec-tutoring-south-wales.html
+- https://southwalestutoring.com/exam-preparation.html
+- https://southwalestutoring.com/locations.html
+- https://southwalestutoring.com/areas/cardiff.html
+- https://southwalestutoring.com/areas/swansea.html
+- https://southwalestutoring.com/areas/newport.html
+- https://southwalestutoring.com/our-tutors.html
 
 ## Enquiries, safeguarding and study resources
-- https://cleandesignuk.github.io/south-wales-tutoring/contact.html
-- https://cleandesignuk.github.io/south-wales-tutoring/safeguarding.html
-- https://cleandesignuk.github.io/south-wales-tutoring/blog.html
+- https://southwalestutoring.com/contact.html
+- https://southwalestutoring.com/safeguarding.html
+- https://southwalestutoring.com/blog.html
 
 The pages are the source of truth for current prices, tutor availability, safeguarding, and service coverage. This optional context file is not a Google ranking or AI citation mechanism.

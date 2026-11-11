@@ -36,7 +36,8 @@ for file in pages:
         ERRORS.append(f'{file.relative_to(ROOT)} contains obsolete general starting rate')
     if '<site-header' not in text or '<site-footer' not in text:ERRORS.append(f'{file.relative_to(ROOT)} missing shared component')
     if 'nwt-shield-favicon.jpg' not in text:ERRORS.append(f'{file.relative_to(ROOT)} missing JPG favicon')
-    if 'https://southwalestutoring.com/' in text:ERRORS.append(f'{file.relative_to(ROOT)} uses unconfigured custom domain')
+    if 'https://cleandesignuk.github.io/south-wales-tutoring/' in text:ERRORS.append(f'{file.relative_to(ROOT)} uses outdated canonical URL')
+    if 'https://southwalestutoring.com/assets/brand/nwt-social-preview.jpg' not in text:ERRORS.append(f'{file.relative_to(ROOT)} missing share image metadata')
     if scanner.forms:
         for f in scanner.forms:
             if f.get('data-web3form') is None:continue
@@ -155,6 +156,8 @@ try:
 except Exception as error:
     ERRORS.append(f'SEO schema validation failed: {error}')
 
+if not (ROOT/'assets/brand/nwt-social-preview.jpg').exists():ERRORS.append('Missing landscape social share JPG')
+if (ROOT/'CNAME').read_text(encoding='utf-8').strip()!='southwalestutoring.com':ERRORS.append('Incorrect custom domain')
 print(f'Validated {len(pages)} HTML pages and {len(list(ROOT.rglob("*.json")))} JSON files.')
 for e in ERRORS:print('ERROR:',e)
 sys.exit(bool(ERRORS))
