@@ -28,5 +28,13 @@
     "designatedSafeguardingLead": "Jesse",
     "email": "safeguarding@nwttutoring.com",
     "web3formsAccessKey": "0bb361ee-84d0-4601-b054-8ef15ab30645"
+  },
+  "analytics": {
+    "gtmContainerId": "GTM-5ZWJ8M27",
+    "ga4MeasurementId": "G-GWCPTLHF8D",
+    "consentMode": "basic-opt-in",
+    "consentStorageKey": "swt-cookie-consent-v2",
+    "safeguardingExcluded": true,
+    "ga4ConfiguredInGTM": false
   }
 }

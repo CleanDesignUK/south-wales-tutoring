@@ -32,6 +32,7 @@
         let result;try{result=await response.json()}catch(_){result={};}
         if(!response.ok||!result.success)throw new Error(result.message||'The message could not be sent.');
         set('Thank you! Our team will contact you shortly.','success');form.reset();
+        if(window.__swtGtmLoaded && Array.isArray(window.dataLayer)){window.dataLayer.push({event:'swt_enquiry_success',form_location:form.id||'contact_page'});}
         if(window.Swal?.fire){await window.Swal.fire({icon:'success',title:'Thank you!',text:'Our team will contact you shortly.',confirmButtonText:'Great!',confirmButtonColor:'#070769',background:'#ffffff',color:'#070769'});}
         else{window.alert('Thank you! Our team will contact you shortly.');}
       }catch(err){set('We could not send your enquiry. Please WhatsApp +44 7480 231362 or email southwales@nwttutoring.com.','error');}

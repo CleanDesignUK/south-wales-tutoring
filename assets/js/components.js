@@ -64,16 +64,46 @@
     }
   }
   const REVIEWS=[{"metric": "2 A*s + 2 As", "topic": "A-Level Results · University of Bath", "author": "Geverson · Parent", "text": "Everything’s very good here, thank you! My son got 2 A*s in Maths and Further Maths, and 2 As in Computer Science and Economics. And he got into Bath!! We’re absolutely delighted and very proud of him. Thank you so much for all your help and support along the way. It’s really appreciated and definitely helped him get to this point."}, {"metric": "A, A, B & A*", "topic": "A-Level Results · Liverpool Vet School", "author": "Janine · Parent", "text": "Great news! She had an A in Chemistry, A in Biology, B in French and A* in Welsh Baccalaureate, so she’s thrilled. She’s going to vet school at Liverpool University, her first choice. Many thanks to you and Emmanuel for all the support last academic year."}, {"metric": "A* Psychology", "topic": "A-Level Result", "author": "Nicole · Parent", "text": "She had an A* in Psychology 🎉"}, {"metric": "GCSE Maths 5 → 7", "topic": "Student Progress", "author": "Sarah · Parent", "text": "We can’t thank Jesse enough for his maths tuition. He tutored my daughter in the run up to her GCSEs and she went from a 5 to a 7 in a short space of time. Jesse’s ability to identify gaps and personalise the tuition allowed my daughter to reach her potential. Jesse was supportive and patient, and helped to build her confidence along the way. I would highly recommend to others."}, {"metric": "GCSE Maths", "topic": "Confidence & Progress", "author": "Kristina · Parent", "text": "Jesse is extremely organised and his approach to tutoring is solid, from a goal setting but more importantly a plan setting perspective. He is currently preparing my son for GCSE and greatly helped him understand complex maths concepts and overcome his confusion. Jesse’s clear explanation and patient guidance made a noticeable difference in my son’s confidence and performance. I truly appreciate Jesse’s dedication and teaching style. Highly recommended."}];
+  // Basic consent mode: do not request GTM before the visitor explicitly opts in.
+  // A new v2 consent key is necessary because v1 acceptance did not authorize analytics.
+  const SW_GTM_ID='GTM-5ZWJ8M27';
+  const SW_CONSENT_KEY='swt-cookie-consent-v2';
+  const SW_CONSENT_DEFAULT={analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'};
+  function startOptInAnalytics(){
+    // Sensitive safeguarding reports are never measured, even when analytics is accepted elsewhere.
+    if(window.__swtGtmLoaded || /\/safeguarding\.html$/i.test(location.pathname))return;
+    window.__swtGtmLoaded=true;
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};
+    window.gtag('consent','default',SW_CONSENT_DEFAULT);
+    window.gtag('consent','update',{...SW_CONSENT_DEFAULT,analytics_storage:'granted'});
+    window.dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'});
+    const script=document.createElement('script');
+    script.async=true;
+    script.src='https://www.googletagmanager.com/gtm.js?id='+encodeURIComponent(SW_GTM_ID);
+    document.head.appendChild(script);
+  }
   class CookieConsent extends HTMLElement{
     connectedCallback(){
-      this.innerHTML=`<section id="cookie-banner" class="cookie-banner" aria-label="Cookie preferences" aria-live="polite"><h2>We respect your privacy</h2><p>We use essential storage to remember your preference. Optional analytics are not enabled here. Read our <a href="${link('cookie-policy.html')}">cookie policy</a>.</p><div class="cookie-actions"><button type="button" class="cookie-accept" data-accept>Accept</button><button type="button" class="cookie-decline" data-decline>Decline</button></div></section>`;
-      const b=this.querySelector('#cookie-banner'),key='swt-cookie-consent-v1',hide=()=>b.classList.remove('is-visible'),show=()=>b.classList.add('is-visible');
-      const save=v=>{try{localStorage.setItem(key,v)}catch(e){}hide()};
+      this.innerHTML=`<section id="cookie-banner" class="cookie-banner" aria-label="Cookie preferences" aria-live="polite"><h2>We respect your privacy</h2><p>Essential storage keeps your preference. With your permission, we use Google Analytics to understand visits and improve our website. <a href="${link('cookie-policy.html')}">Cookie policy</a>.</p><div class="cookie-actions"><button type="button" class="cookie-accept" data-accept>Accept analytics</button><button type="button" class="cookie-decline" data-decline>Decline</button></div></section>`;
+      const banner=this.querySelector('#cookie-banner'),hide=()=>banner.classList.remove('is-visible'),show=()=>banner.classList.add('is-visible');
+      const getChoice=()=>{try{return localStorage.getItem(SW_CONSENT_KEY)}catch(_){return null}};
+      const save=choice=>{
+        const previous=getChoice();
+        try{localStorage.setItem(SW_CONSENT_KEY,choice)}catch(_){}
+        hide();
+        if(choice==='accepted')startOptInAnalytics();
+        if(choice==='declined' && previous==='accepted' && window.__swtGtmLoaded){
+          window.gtag?.('consent','update',SW_CONSENT_DEFAULT);
+          location.reload(); // Unload third-party scripts immediately after consent is withdrawn.
+        }
+      };
       this.querySelector('[data-accept]').addEventListener('click',()=>save('accepted'));
       this.querySelector('[data-decline]').addEventListener('click',()=>save('declined'));
       window.SWTshowCookiePreferences=show;
-      let prior=null;try{prior=localStorage.getItem(key)}catch(e){}
-      if(!prior)requestAnimationFrame(()=>setTimeout(show,450));
+      const choice=getChoice();
+      if(choice==='accepted')startOptInAnalytics();
+      else if(choice!=='declined')requestAnimationFrame(()=>setTimeout(show,450));
     }
   }
   customElements.define('site-header',SiteHeader);

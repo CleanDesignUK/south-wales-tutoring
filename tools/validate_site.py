@@ -73,6 +73,16 @@ for file in pages:
         ERRORS.append(f'Missing mobile carousel assets on {file.relative_to(ROOT)}')
     if file.name=='our-tutors.html' and ('data-name="howard"' in text or 'data-name="mahima"' in text):
         ERRORS.append('Deprecated tutor cards still present')
+# Analytics integration safety checks: only one GTM container, opted in via global cookie component.
+component=(ROOT/'assets/js/components.js').read_text(encoding='utf-8')
+if component.count('GTM-5ZWJ8M27')!=1:ERRORS.append('Unexpected Google Tag Manager container configuration')
+if 'swt-cookie-consent-v2' not in component or 'startOptInAnalytics()' not in component:ERRORS.append('Missing analytics consent gate')
+if 'GTM-P8K6CF2Z' in component:ERRORS.append('Duplicate Analytics-provided container detected')
+for document in pages:
+    page_html=document.read_text(encoding='utf-8')
+    if 'googletagmanager.com/gtm.js' in page_html or 'GTM-P8K6CF2Z' in page_html:
+        ERRORS.append(f'{document.relative_to(ROOT)} embeds tracking outside the consent gate')
+
 if not (ROOT/'assets/brand/nwt-shield.png').exists():ERRORS.append('Missing NWT crest')
 if not (ROOT/'assets/brand/nwt-shield-favicon.jpg').exists():ERRORS.append('Missing JPG favicon')
 # SEO and service-area schema checks on all HTML pages.
