@@ -30,6 +30,7 @@ for file in pages:
         try:json.loads(item)
         except Exception as e:ERRORS.append(f'{file.relative_to(ROOT)} invalid JSON-LD: {e}')
     if 'Robert' in text or 'Ashley' in text:ERRORS.append(f'{file.relative_to(ROOT)} contains obsolete tutor')
+    if re.search(r'\bin\s+South\s+Wales\b', text, re.I):ERRORS.append(f'{file.relative_to(ROOT)} suggests the service is located in South Wales')
     # Only general advertised prices are checked here, not individual tutors' rates.
     marketing_text=re.sub(r'<article\b[^>]*class="[^"]*\btutor-card-new\b[^"]*"[^>]*>[\s\S]*?</article>', '', text)
     if file.name != 'our-tutors.html' and ('£20/hr' in marketing_text or '£25/hr' in marketing_text):
@@ -158,6 +159,9 @@ except Exception as error:
 
 if not (ROOT/'assets/brand/nwt-social-preview.jpg').exists():ERRORS.append('Missing landscape social share JPG')
 if (ROOT/'CNAME').read_text(encoding='utf-8').strip()!='southwalestutoring.com':ERRORS.append('Incorrect custom domain')
+for content_path in ('data/seo-pages.json','tools/enhance_seo.py','data/posts.json','llms.txt'):
+    if re.search(r'\bin\s+South\s+Wales\b', (ROOT/content_path).read_text(encoding='utf-8'),re.I):
+        ERRORS.append(f'{content_path} contains misleading location phrasing')
 print(f'Validated {len(pages)} HTML pages and {len(list(ROOT.rglob("*.json")))} JSON files.')
 for e in ERRORS:print('ERROR:',e)
 sys.exit(bool(ERRORS))

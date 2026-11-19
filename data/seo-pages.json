@@ -24,12 +24,12 @@
   },
   "english-tutoring-south-wales.html": {
     "title": "English Tutors South Wales | GCSE, WJEC & A-Level",
-    "description": "Online English tutoring in South Wales for WJEC GCSE English Language, Literature, reading, essays and A-Level English. One-to-one help from UK tutors.",
+    "description": "Online English tutoring for South Wales students studying WJEC GCSE English Language, Literature, reading, essays and A-Level English. One-to-one help from UK tutors.",
     "service": "Online GCSE and A-Level English tutoring"
   },
   "gcse-tutoring-south-wales.html": {
     "title": "GCSE Tutors South Wales | WJEC Maths, Science & English",
-    "description": "Find online GCSE tutors in South Wales for Year 10, Year 11 and resits. WJEC Maths, Physics, Chemistry, Biology and English. Lessons from £23/hr.",
+    "description": "Find online GCSE tutors for Year 10, Year 11 and resit students across South Wales. WJEC Maths, Physics, Chemistry, Biology and English. Lessons from £23/hr.",
     "service": "Online GCSE exam preparation and subject tutoring",
     "image": "assets/images/gcse-revision.webp"
   },
@@ -45,7 +45,7 @@
   },
   "wjec-tutoring-south-wales.html": {
     "title": "WJEC Tutors South Wales | GCSE Maths, Physics & Science",
-    "description": "Specialist online WJEC tutoring in South Wales for GCSE Maths, Numeracy, Biology, Chemistry, Physics, English and AS/A-Level exams. Check your specification.",
+    "description": "Specialist online WJEC tutoring for South Wales students preparing for GCSE Maths, Numeracy, Biology, Chemistry, Physics, English and AS/A-Level exams. Check your specification.",
     "service": "Online WJEC GCSE, AS and A-Level tuition"
   },
   "about.html": {
@@ -56,19 +56,19 @@
     "type": "AboutPage"
   },
   "subjects.html": {
-    "title": "Our Courses | Maths, Science & Languages in South Wales",
-    "description": "Explore online tutoring courses in South Wales, from Maths, Physics, Chemistry and English to Welsh, French, Chinese and more. GCSE and A-Level support.",
+    "title": "Our Courses | Maths, Science & Languages across South Wales",
+    "description": "Explore online tutoring courses for South Wales students, from Maths, Physics, Chemistry and English to Welsh, French, Chinese and more. GCSE and A-Level support.",
     "service": "Online subject tutoring across Maths, sciences, English and languages",
     "type": "CollectionPage"
   },
   "our-tutors.html": {
-    "title": "Find an Online Tutor in South Wales | GCSE & A-Level",
-    "description": "Browse 37 online tutors offering Maths, Physics, Biology, Chemistry, English and other subjects in South Wales. See individual rates and enquire directly.",
+    "title": "Find an Online Tutor for South Wales Students | GCSE & A-Level",
+    "description": "Browse 37 online UK tutors offering Maths, Physics, Biology, Chemistry, English and other subjects to South Wales students. See individual rates and enquire directly.",
     "service": "Online tutor matching and one-to-one tutoring",
     "type": "CollectionPage"
   },
   "locations.html": {
-    "title": "Online Tutors in Cardiff, Swansea, Newport & South Wales",
+    "title": "Online Tutoring for Cardiff, Swansea, Newport & South Wales",
     "description": "One-to-one online tutoring for Cardiff, Swansea, Newport, Bridgend, the Valleys and wider South Wales. Explore local coverage for GCSE and A-Level lessons.",
     "service": "Online tutoring for families across South Wales",
     "type": "CollectionPage"
@@ -80,7 +80,7 @@
   },
   "areas/swansea.html": {
     "title": "Swansea Tutors Online | WJEC GCSE Maths & A-Level",
-    "description": "Find online GCSE Maths, Physics, Science, English and A-Level tutors in Swansea, Mumbles, Sketty, Uplands and Gower. WJEC-focused one-to-one lessons.",
+    "description": "Find online GCSE Maths, Physics, Science, English and A-Level tutors for students across Swansea, Mumbles, Sketty, Uplands and Gower. WJEC-focused one-to-one lessons.",
     "service": "Online GCSE and A-Level tutoring for Swansea"
   },
   "areas/newport.html": {
@@ -106,7 +106,7 @@
   },
   "blog.html": {
     "title": "GCSE & A-Level Revision Advice | South Wales Tutoring Blog",
-    "description": "Read practical WJEC GCSE Maths, Physics and exam revision guides for South Wales families, plus advice on choosing online tutors in Cardiff and Swansea.",
+    "description": "Read practical WJEC GCSE Maths, Physics and exam revision guides for South Wales families, plus advice on choosing online tutors for Cardiff and Swansea families.",
     "service": "Online exam preparation tutoring",
     "type": "Blog"
   },
@@ -125,8 +125,8 @@
     "image": "assets/images/physics-study.webp"
   },
   "blog/choosing-online-tutor-cardiff-swansea-newport.html": {
-    "title": "Choosing an Online Tutor in Cardiff, Swansea or Newport",
-    "description": "How to choose an online GCSE or A-Level tutor in South Wales. Compare subject expertise, WJEC exam-board fit, lesson format and communication before booking.",
+    "title": "Choosing an Online Tutor for Cardiff, Swansea and Newport Families",
+    "description": "How to choose an online GCSE or A-Level tutor for South Wales students. Compare subject expertise, WJEC exam-board fit, lesson format and communication before booking.",
     "service": "Online tutor matching for South Wales",
     "type": "BlogPosting"
   },
